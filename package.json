@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-june",
+  "version": "1.0.0",
+  "description": "Backend for my Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "James Boyle",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
