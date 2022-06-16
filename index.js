@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
+require("./db");
 
 const projectsRouter = require("./routes/projects");
 const techRouter = require("./routes/techStack");
