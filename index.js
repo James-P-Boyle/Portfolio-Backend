@@ -15,6 +15,10 @@ app.use(express.json());
 app.use("/projects", projectsRouter);
 app.use("/tech", techRouter);
 
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
