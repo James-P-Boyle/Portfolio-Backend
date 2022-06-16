@@ -11,7 +11,9 @@ const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
-app.use(cors({ origin: "https://frozen-retreat-92725.herokuapp.com/" }));
+
+app.use(cors({ origin: "*" }));
+
 app.use("/projects", projectsRouter);
 app.use("/tech", techRouter);
 
