@@ -5,14 +5,17 @@ require("./db");
 
 const projectsRouter = require("./routes/projects");
 const techRouter = require("./routes/techStack");
+const emailRouter = require("./routes/email");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
+//process.env.PORT ||
 
 app.use(express.json());
 app.use(cors({ origin: "*" }));
 
 app.use("/projects", projectsRouter);
+app.use("/email", emailRouter);
 app.use("/tech", techRouter);
 
 app.get("/", (req, res) => {
